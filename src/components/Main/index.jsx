@@ -1,16 +1,23 @@
 import BigTitle from "../BigTitle";
+import Text from "../Text";
+import MainButtons from "../MainButtons";
+import Container from "../Container";
 
 export default function Main() {
   return (
     <div className="flex justify-center items-center py-32">
       <div className="flex flex-col">
         <BigTitle>The React Framework for Production</BigTitle>
-        <p className="text-lg text-neutral-500 mb-10">
+        <Text>
           Next.js gives you the best developer experience with all the features
           you need for production: hybrid static & server rendering, TypeScript
           support, smart bundling, route pre-fetching, and more. No config
           needed.
-        </p>
+        </Text>
+        <div className="flex flex-row justify-center gap-10">
+          <MainButtons />
+        </div>
+        <Container />
       </div>
     </div>
   );
