@@ -1,6 +1,6 @@
 export default function Container() {
   return (
-    <div className="flex w-full p-6 gap-10 mt-28">
+    <div className="flex w-full p-6 gap-10 mt-28 mb-8">
       <div id="container-img" className="grow-0">
         <img
           src="https://picsum.photos/320/320"
