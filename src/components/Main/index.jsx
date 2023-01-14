@@ -4,19 +4,27 @@ import MainButtons from "../MainButtons";
 import Container from "../Container";
 import Labels from "../Labels";
 import FeaturesCards from "../FeaturesCards";
+import { useEffect, useState } from "react";
 
 export default function Main() {
+  const [pageinfo, setPageinfo] = useState({});
+
+  useEffect(() => {
+    (async () => {
+      const res = await fetch("http://localhost:3000/home");
+      const data = await res.json();
+      setPageinfo(data);
+      console.log(pageinfo.title)
+    })();
+  }, []);
+
   return (
     <div className="flex justify-center items-center py-32">
       <div className="flex flex-col">
-        <BigTitle>The React Framework for Production</BigTitle>
-        <Text>
-          Next.js gives you the best developer experience with all the features
-          you need for production: hybrid static & server rendering, TypeScript
-          support, smart bundling, route pre-fetching, and more. No config
-          needed.
-        </Text>
-        <div className="flex flex-row justify-center gap-10 mb-8">
+        <BigTitle>{pageinfo.title}</BigTitle>
+        <Text>{pageinfo.text}</Text>
+        <div className="
+        flex flex-col xs:flex-row items-center justify-center gap-10 mb-8">
           <MainButtons />
         </div>
         <Labels />

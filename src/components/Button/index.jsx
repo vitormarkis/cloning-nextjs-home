@@ -3,7 +3,7 @@ export default function Button({ children, outlined, big }) {
   const cl_outlined = "border-neutral-300 bg-white text-neutral-500";
 
   const cl_regular = "rounded-md border text-sm px-4 py-2";
-  const cl_big = "rounded-lg px-14 text-base rounded-md px-12 py-3";
+  const cl_big = "w-full max-w-max rounded-lg px-14 text-base rounded-md px-12 py-3";
 
   const cl_classic_regular =
     "hover:bg-white hover:border-blue-600 hover:border hover:text-blue-600";

@@ -5,12 +5,12 @@ import Main from "./components/Main";
 
 export default function App() {
   return (
-    <>
+    <div>
       <Vercel />
       <Layout>
         <Header />
         <Main />
       </Layout>
-    </>
+    </div>
   );
 }

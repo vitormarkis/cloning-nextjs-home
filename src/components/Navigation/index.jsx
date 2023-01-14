@@ -1,10 +1,14 @@
 export default function Navigation() {
     return (
-        <ul className="flex 
+        <ul className="
         [&_li]:text-sm
         [&_li]:mx-2
         [&_li]:text-neutral-500
         [&_li]:font-medium
+        [&_li]:truncate
+        overflow-hidden
+        hidden
+        md:flex
         ">
             <li>Início</li>
             <li>Showcase</li>

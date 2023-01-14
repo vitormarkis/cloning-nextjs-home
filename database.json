@@ -1,0 +1,45 @@
+{
+    "home": {
+        "title": "The React Framework for Production",
+        "text": "Next.js gives you the best developer experience with all the features you need for production: hybrid static & server rendering, TypeScript support, smart bundling, route pre-fetching, and more. No config needed."
+    },
+    "container": {
+        "title": "O cara é o mais pica no que faz!",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt architecto, animi vero illum adipisci excepturi voluptatem nam accusamus quae natus totam nihil ea at dolorum, accusantium dolores delectus odit non?",
+        "image_url": "https://picsum.photos/320/320"
+    },
+    "features": {
+        "title": "The Web SDK",
+        "text": "Next.js has all the tools you need to make the Web. Faster.",
+        "cards": [
+            {
+                "title": "Image Optimization",
+                "text": "<Image> and Automatic Image Optimization with instant builds."
+            },
+            {
+                "title": "Internationalization",
+                "text": "Built-in Domain & Subdomain Routing and Automatic Language detection."
+            },
+            {
+                "title": "Next.js Analytics",
+                "text": "A true lighthouse score based on real visitor data & page-by-page insights"
+            },
+            {
+                "title": "Hybrid: SSG and SSR",
+                "text": "Pre-render pages at build time (SSG) or request time (SSR) in a single project."
+            },
+            {
+                "title": "Incremental Static Regeneration",
+                "text": "Add and update statically pre-rendered pages incrementally after build time."
+            },
+            {
+                "title": "TypeScript Support",
+                "text": "Automatic TypeScript configuration and compilation."
+            },
+            {
+                "title": "Fast Refresh",
+                "text": "Fast, reliable live-editing experience, as proven at Facebook scale."
+            }
+        ]
+    }
+}

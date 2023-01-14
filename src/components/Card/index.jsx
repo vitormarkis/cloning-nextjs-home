@@ -1,4 +1,5 @@
-function Card({ title, text }) {
+function Card(card) {
+  console.log(card)
   return (
     <div
       className="border border-neutral-200 rounded-md p-5
@@ -12,8 +13,8 @@ function Card({ title, text }) {
     [&:hover>a]:underline
     "
     >
-      <h1 className="font-semibold text-lg">{title}</h1>
-      <p className="text-sm">{text}</p>
+      <h1 className="font-semibold text-lg">{card.title}</h1>
+      <p className="text-sm">{card.text}</p>
       <a href="/" className="text-cyan-500 text-sm">
         Documentation
       </a>
