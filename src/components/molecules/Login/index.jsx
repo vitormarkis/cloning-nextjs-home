@@ -1,4 +1,4 @@
-import LoginIcon from '../LoginIcon';
+import LoginIcon from '../../icons/LoginIcon'
 
 export default function Login() {
   return (

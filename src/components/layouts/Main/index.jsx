@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import BigTitle from "../BigTitle";
-import Text from "../Text";
-import MainButtons from "../MainButtons";
-import Container from "../Container";
-import Labels from "../Labels";
-import FeaturesCards from "../FeaturesCards";
 import { useEffect, useState } from "react";
+import BigTitle from '../../atoms/BigTitle'
+import TextAn from "../../atoms/TextAn";
+import Labels from '../../atoms/Labels'
+import Container from '../Container'
+import MainButtons from '../../molecules/MainButtons'
+import FeaturesCards from '../../organisms/FeaturesCards'
 
 export default function Main() {
   const [pageinfo, setPageinfo] = useState({});
@@ -23,7 +23,7 @@ export default function Main() {
     <div className="flex justify-center items-center py-32">
       <div className="flex flex-col">
         <BigTitle>{pageinfo.title}</BigTitle>
-        <Text>{pageinfo.text}</Text>
+        <TextAn>{pageinfo.text}</TextAn>
         <motion.div className="
         flex flex-col xs:flex-row items-center justify-center gap-10 mb-8"
         initial={{opacity: 0}}

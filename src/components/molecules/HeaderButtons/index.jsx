@@ -1,5 +1,5 @@
-import Button from "../Button";
-import GithubIcon from "../GithubIcon";
+import Button from "../../atoms/Button";
+import GithubIcon from "../../icons/GithubIcon";
 
 export default function HeaderButtons() {
     return (

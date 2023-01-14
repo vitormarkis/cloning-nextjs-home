@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
-import HeaderButtons from "../HeaderButtons";
-import Logo from "../Logo";
-import Navigation from "../Navigation";
+import HeaderButtons from "../../molecules/HeaderButtons";
+import Logo from "../../atoms/Logo";
+import Navigation from "../../molecules/Navigation";
 
 export default function Header() {
   return (

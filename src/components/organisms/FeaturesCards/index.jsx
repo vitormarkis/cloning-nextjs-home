@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import ContainerTitle from "../ContainerTitle";
-import CardContainer from "../CardContainer";
-import Card from "../Card";
+import ContainerTitle from "../../molecules/ContainerTitle";
+import Container from "../../atoms/Container";
+import Card from "../../molecules/Card";
 
 function FeaturesCards() {
   const [pageinfo, setPageinfo] = useState([]);
@@ -17,12 +17,12 @@ function FeaturesCards() {
   return (
     <div>
       <ContainerTitle title={pageinfo.title} text={pageinfo.text} />
-      <CardContainer className="flex flex-row gap-7 flex-wrap">
+      <Container className="flex flex-row gap-7 flex-wrap">
         {pageinfo.cards && pageinfo.cards.map((card, idx) => {
           console.log(card)
           return <Card {...card}/>
 })}
-      </CardContainer>
+      </Container>
     </div>
   );
 }

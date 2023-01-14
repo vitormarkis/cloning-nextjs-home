@@ -1,5 +1,5 @@
-import VercelLogo from "../VercelLogo";
-import DeployVercel from "../DeployVercel";
+import VercelLogo from "../../icons/VercelLogo";
+import DeployVercel from "../../atoms/DeployVercel";
 
 export default function Vercel() {
   return (
